@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/CSS_FILE/ItemList.css"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+ 
+
+        <h1>STRAW HAT PIRATES INFORMATION</h1>
+    
+     
+        <table>
+            <thead>
+              
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>ROLE</th>
+                    <th>DEVIL FRUIT</th>
+                    <th>BOUNTY</th>
+                </tr>
+            </thead>
+            @foreach (var i in Model)
+                 {
+            <tbody>
+                <tr>
+                    <td>@i.ID</td>
+                    <td>@i.Name</td>
+                    <td>@i.Age</td>
+                    <td>@i.Role</td>
+                    <td>@i.Fruit</td>
+                    <td>@i.Bounty</td>
+
+                </tr>
+            </tbody>
+                    }
+        </table>
+
+      
+        @*<h1>@ViewBag.ItemList</h1>
+        <b>ID : </b> @i.ID <br />
+        <b>Name : </b> @i.Name <br />
+        <b>Category : </b> @i.Category <br />
+        <b>Price : </b> @i.Price <br />
+        <hr />*@
+
+
+</body>
+</html>
